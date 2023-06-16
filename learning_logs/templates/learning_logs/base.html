@@ -11,7 +11,7 @@
 	{% bootstrap_javascript jquery='full' %}
 
 </head>
-<body>
+<body style="background-color:#FFCC00;">
 	<nav class="navbar navbar-expand-md navbar-light bg-light mb-4 border">
 
 		<a class="navbar-brand" href="{% url 'learning_logs:index' %}">Learning Log</a>
@@ -45,12 +45,14 @@
 	</nav>
 
 	<main role="main" class="container">
+	
 		<div class="pb-2 mb-2 border-bottom">
 			{% block page_header %}{% endblock page_header %}
 		</div>
 		<div>
 			{% block content %}{% endblock content %}
 		</div>
+
 	</main>
 </body>
 </html>
